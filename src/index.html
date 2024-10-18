@@ -14,14 +14,46 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <div class="card">
-        <span class="top-suit"></span>
-        <span class="number"></span>
-        <span class="bottom-suit"></span>
+      <div class="container-fluid text-center bg-success shadow">
+        <h1 class="text-bg-success p-4">Random Cards Generator</h1>
+      </div>
+      <div
+        class="container d-flex-column justify-content-center align-items-center p-3"
+      >
+    </div>
+        <div
+          id="card"
+          class="container card d-flex justify-content-between align-items-center bg-light shadow-lg mt-4 tarjeta"
+          style="height: 450px; width: 300px"
+        >
+          <div id="top-suit" class="suit align-self-start"></div>
+          <div id="number"></div>
+          <div id="bottom-suit" class="suit align-self-end"></div>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center mt-4"
+        >
+          <button id="newcard" class="btn btn-lg btn-light btn-outline-dark">
+            Generar una carta aleatoria
+          </button>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center align-items-center mt-4 mb-5 p-3 bg-dark rounded"
+        >
+          <div class="d-flex d-flex-column d-flex-md-row align-items-center">
+            <h2 class="me-md-3 mb-md-0 text-bg-dark">
+              Ajusta el tamaño de la carta a tu manera
+            </h2>
+            <input type="number" id="width" placeholder="Width" value="300" />
+            <input type="number" id="height" placeholder="Height" value="450" />
+            <button id="chsize" class="btn btn-success ms-3 me-3">
+              Cambiar tamaño
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <input id="width"></input>
-    <input id="height"></input>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
